@@ -1,9 +1,9 @@
-import pyshorteners as pys
+import pyshorteners
 import streamlit as st
 
 #Funcion acortadora de links
 def shorten_url(url):
-    s = pys.Shortener()
+    s = pyshorteners.Shortener()
     shorten_url = s.tinyurl.short(url)
     return shorten_url
 
